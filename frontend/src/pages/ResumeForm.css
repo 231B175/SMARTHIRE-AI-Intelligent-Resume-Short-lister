@@ -1,0 +1,150 @@
+/* ResumeForm.css — enhanced visibility + modern neon UI */
+
+.resume-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e1b4b, #4338ca, #7e22ce, #db2777);
+  background-size: 400% 400%;
+  animation: bgShift 10s ease infinite;
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes bgShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.resume-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(18px);
+  border-radius: 20px;
+  padding: 45px 50px;
+  width: 500px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  text-align: center;
+}
+
+.resume-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6);
+}
+
+.resume-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #c7d2fe;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.resume-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-input {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #f9fafb;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.form-input::placeholder {
+  color: #d1d5db;
+  opacity: 0.9;
+}
+
+.form-input:focus {
+  background-color: rgba(255, 255, 255, 0.18);
+  border-color: #a78bfa;
+  box-shadow: 0 0 10px #a78bfa, 0 0 20px rgba(139, 92, 246, 0.5);
+  transform: scale(1.02);
+}
+
+.button-group {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn {
+  border: none;
+  padding: 14px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.generate-btn {
+  background: linear-gradient(135deg, #f97316, #fb923c);
+  box-shadow: 0 5px 20px rgba(251, 146, 60, 0.4);
+}
+
+.generate-btn:hover {
+  background: linear-gradient(135deg, #fb923c, #fdba74);
+  transform: translateY(-3px);
+}
+
+.link-btn {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  box-shadow: 0 5px 20px rgba(99, 102, 241, 0.4);
+}
+
+.link-btn:hover {
+  background: linear-gradient(135deg, #6366f1, #818cf8);
+  transform: translateY(-3px);
+}
+
+.back-btn {
+  background: linear-gradient(135deg, #ec4899, #f472b6);
+  box-shadow: 0 5px 20px rgba(244, 114, 182, 0.4);
+}
+
+.back-btn:hover {
+  background: linear-gradient(135deg, #f472b6, #fb7185);
+  transform: translateY(-3px);
+}
+
+.link-section {
+  margin-top: 25px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  color: #f3f4f6;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.link-section a {
+  color: #60a5fa;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link-section a:hover {
+  text-decoration: underline;
+}

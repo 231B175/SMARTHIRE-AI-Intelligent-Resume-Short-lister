@@ -1,0 +1,91 @@
+/* UploadResume.css */
+
+.upload-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at 20% 20%, #6366f1, #8b5cf6, #ec4899);
+  font-family: "Poppins", sans-serif;
+  background-attachment: fixed;
+  perspective: 1000px;
+}
+
+.upload-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  border-radius: 24px;
+  padding: 50px;
+  text-align: center;
+  width: 420px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  transform: rotateY(5deg);
+  transition: all 0.5s ease;
+}
+
+.upload-card:hover {
+  transform: rotateY(0deg) scale(1.02);
+}
+
+.upload-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  margin-bottom: 25px;
+}
+
+.upload-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.file-name {
+  font-size: 14px;
+  color: #e0e7ff;
+  margin-bottom: 25px;
+}
+
+.upload-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.upload-btn {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+}
+
+.upload-btn:hover {
+  transform: translateY(-4px);
+  background: linear-gradient(135deg, #6366f1, #818cf8);
+}
+
+.back-btn {
+  background: linear-gradient(135deg, #ec4899, #f472b6);
+}
+
+.back-btn:hover {
+  transform: translateY(-4px);
+  background: linear-gradient(135deg, #f472b6, #fb7185);
+}

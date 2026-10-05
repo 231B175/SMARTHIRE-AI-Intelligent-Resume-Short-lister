@@ -1,0 +1,100 @@
+/* ATSScore.css */
+
+.ats-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top left, #6366f1, #8b5cf6, #ec4899);
+  font-family: "Poppins", sans-serif;
+  background-attachment: fixed;
+  perspective: 1000px;
+}
+
+.ats-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+  border-radius: 24px;
+  padding: 50px;
+  width: 500px;
+  text-align: center;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45);
+  transform: rotateX(6deg);
+  transition: all 0.5s ease;
+}
+
+.ats-card:hover {
+  transform: rotateX(0deg) scale(1.02);
+}
+
+.ats-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  margin-bottom: 30px;
+}
+
+.ats-message {
+  color: #e0e7ff;
+  font-size: 16px;
+}
+
+.ats-scores-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.ats-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-weight: 500;
+}
+
+.resume-name {
+  flex: 1;
+  text-align: left;
+}
+
+.score-bar {
+  flex: 2;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+.fill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.8s ease-in-out;
+}
+
+.score-text {
+  width: 50px;
+  text-align: right;
+}
+
+.ats-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.ats-btn:hover {
+  transform: translateY(-4px);
+  background: linear-gradient(135deg, #6366f1, #818cf8);
+}

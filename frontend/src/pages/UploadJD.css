@@ -1,0 +1,91 @@
+/* UploadJD.css */
+
+.jd-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at bottom right, #2563eb, #7c3aed, #db2777);
+  font-family: "Poppins", sans-serif;
+  background-attachment: fixed;
+  perspective: 1000px;
+}
+
+.jd-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+  border-radius: 24px;
+  padding: 50px;
+  text-align: center;
+  width: 420px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45);
+  transform: rotateX(6deg);
+  transition: all 0.5s ease;
+}
+
+.jd-card:hover {
+  transform: rotateX(0deg) scale(1.02);
+}
+
+.jd-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  margin-bottom: 25px;
+}
+
+.jd-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.file-name {
+  font-size: 14px;
+  color: #e0e7ff;
+  margin-bottom: 25px;
+}
+
+.jd-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.upload-btn {
+  background: linear-gradient(135deg, #10b981, #34d399);
+}
+
+.upload-btn:hover {
+  transform: translateY(-4px);
+  background: linear-gradient(135deg, #34d399, #6ee7b7);
+}
+
+.back-btn {
+  background: linear-gradient(135deg, #f43f5e, #fb7185);
+}
+
+.back-btn:hover {
+  transform: translateY(-4px);
+  background: linear-gradient(135deg, #fb7185, #fda4af);
+}

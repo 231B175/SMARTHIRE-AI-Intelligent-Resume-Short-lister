@@ -1,0 +1,79 @@
+/* Global body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #6366F1, #EC4899);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Centered card for all pages */
+.card {
+  background: #fff;
+  max-width: 450px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+.card h2 {
+  text-align: center;
+  color: #4F46E5;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Buttons */
+button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+button.primary {
+  background-color: #4F46E5;
+  color: white;
+}
+
+button.primary:hover {
+  background-color: #4338CA;
+}
+
+button.secondary {
+  background-color: white;
+  border: 1px solid #4F46E5;
+  color: #4F46E5;
+}
+
+button.secondary:hover {
+  background-color: #E0E7FF;
+}
+
+/* Full-width buttons if needed */
+.w-full {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Lists */
+ul {
+  padding-left: 20px;
+}
